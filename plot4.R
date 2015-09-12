@@ -18,8 +18,6 @@ lines(x=x$DateTime, y=x$Sub_metering_2, col="red")
 lines(x=x$DateTime, y=x$Sub_metering_3, col="blue")
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),  bty = "n",  col = c("black", "red", "blue"), lty = 1)
 
-plot(x=x$DateTime, y=x$Global_reactive_power, type = "l", xlab = "", ylab = "Global_reactive_power", xlab = "datetime")
-
-
+plot(x=x$DateTime, y=x$Global_reactive_power, type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 
 dev.off()
